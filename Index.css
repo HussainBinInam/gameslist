@@ -1,0 +1,103 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+.box{
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    width: 100%;
+}
+nav{
+    display: block;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    font-size: 24;
+    
+    margin: 0;
+}
+nav ul{
+    font-family: Arial;
+    font-size: 24;
+    padding: 0px,20px;
+    float: left;
+    margin: 0;
+    font-size: 24;
+    width: 100%;
+}
+nav ul li{
+    display: block;
+    float: left;
+    list-style: none;
+    position: relative;
+    margin: 0;
+    
+}
+nav ul li a{
+    display: block;
+    padding: 12px 20px;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 20px, 50 px;
+    color: white;
+}
+nav ul li ul{
+    display: none;
+    position:absolute ;
+    background-color: black;
+    padding: 0;
+    border-radius: 0, 0, 4px,4px;
+    z-index: 2;
+    width: fit-content;
+    margin: 0;
+    
+}
+nav ul li ul li{
+    width: 100%;
+    color: white;
+}
+nav ul li:hover ul {
+    display: block;
+}
+nav ul li a:hover{
+    background-color: rgb(87, 135, 224);
+}
+.content{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+}
+ul{
+    width :100px;
+}
+.contentText{
+    z-index: 1;
+    color: #f1f1f1;
+    font-size: 50px;
+    grid-area: 1/1;
+}
+.contentImage{
+    background-image: url("/Genres/GenrePictures/blacksceen.jpg");
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(20%);
+    filter: contrast(200%), hue-rotate(90deg);
+    color: white;
+    grid-area: 1/1;
+    -webkit-transition: background 1.5s linear;
+    -moz-transition: background 1.5s linear;
+    -o-transition: background 1.5s linear;
+    -ms-transition: background 1.5s linear;
+    transition: background 1.5s linear;
+}
+  
